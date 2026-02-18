@@ -1,14 +1,19 @@
 import java.io.FileWriter;
 import java.io.IOException;
+
 public class FileWriterExample {
-public static void main(String[] args) {
-try {
-FileWriter fw = new FileWriter("Sample.txt");
-fw.write("Java I/O Streams Example hhlbrv f vhjbrv er v  vbk.r");
-fw.close();
-System.out.println("File written successfully.");
-} catch (IOException e) {
-System.out.println(e);
+    public static void main(String[] args) {
+        try {
+            // true = append mode
+            FileWriter writer = new FileWriter("sample.txt", true);
+            writer.write("\nDivyansh lo prove kr rha hu.");
+            writer.close();
+
+            System.out.println("Text appended successfully.");
+        } catch (IOException e) {
+            System.out.println("Error writing to file.");
+            e.printStackTrace();
+        }
+    }
 }
-}
-}
+   
