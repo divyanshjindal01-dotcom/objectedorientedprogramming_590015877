@@ -1,0 +1,5 @@
+Java provides powerful support for Input and Output (I/O) through the java.io
+package.
+A Stream is a flow of data.
+Input Stream → Reads data from a source
+Output Stream → Writes data to a destination
